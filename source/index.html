@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Изучение веб-разработки</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="HTML, CSS, JavaScript">
+    <meta name="Description" content="Well organized and easy to understand Web building tutorials.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preload" href="lib/fonts/fontawesome8deb.woff2?14663396" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="lib/fonts/source-code-pro-v14-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="lib/fonts/roboto-mono-v13-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="lib/fonts/source-sans-pro-v14-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="lib/fonts/source-sans-pro-v14-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="lib/fonts/freckle-face-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="lib/styles-first.css">
+    <style>
+        @media screen and (min-width: 769px) {
+            .bar-block .button {
+                padding: 0 16px !important;
+            }
+        }
+        
+        #main {
+            padding: 0;
+            border-right: none;
+        }
+        
+        @media (min-width:1675px) {
+            #main {
+                width: auto;
+            }
+        }
+        
+        .fa {
+            font-size: 20px;
+        }
+        
+        .fa-thumbs-o-up:hover {
+            color: #fff;
+        }
+        
+        .col.l4 .card-2 {
+            padding: 15px 10px;
+            height: 260px;
+        }
+        
+        .bar {
+            position: relative;
+            z-index: 4;
+            font-size: 18px;
+            background-color: white;
+            color: #282A35;
+        }
+        
+        .bar-icon-hover:hover,
+        .fa-logo:hover {
+            background-color: white !important;
+            color: #059862!important;
+        }
+        
+        .ribbon-vid {
+            width: 60px;
+            font-size: 14px;
+            padding: 5px;
+            position: absolute;
+            left: -20px;
+            top: -10px;
+            text-align: center;
+            color: black;
+            border-radius: 25px;
+            -ms-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+        }
+        
+        .ribbon-topnav {
+            font-size: 11px;
+            font-weight: bold;
+            padding: 3px 10px;
+            margin-left: 3px;
+            text-align: center;
+            color: black;
+            border-radius: 25px;
+            border: 1px solid black;
+            position: relative;
+            top: -2px;
+            background-color: white;
+        }
+        
+        @media screen and (max-width: 1080px) {
+            .hide-1080 {
+                display: none !important;
+            }
+        }
+        
+        @media screen and (max-width: 1200px) {
+            .hide-1200 {
+                display: none !important;
+            }
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
+        h1 {
+            font-size: 80px;
+            margin: 2px 0 -20px 0 !important;
+        }
+        
+        .green-border {
+            border-left: 4px solid #04AA6D;
+        }
+        
+        .tut-button {
+            background-color: #04AA6D;
+            color: white;
+            font-size: 18px;
+            margin: auto;
+            display: block;
+            width: 200px;
+            border-radius: 25px;
+        }
+        
+        .tut-button:hover {
+            background-color: #059862 !important;
+            color: white!important;
+        }
+        
+        .black-color {
+            background-color: #282A35;
+            color: white;
+        }
+        
+        .black-color:hover {
+            background-color: #000!important;
+            color: white!important;
+        }
+        
+        .grey-color {
+            background-color: #E7E9EB;
+            color: black
+        }
+        
+        .tutbuttons a {
+            text-decoration: none;
+        }
+        
+        .tutbuttons a div {
+            opacity: 0.9;
+        }
+        
+        .tutbuttons a:hover div {
+            opacity: 1;
+        }
+        
+        .yellow-hover:hover {
+            background-color: #fff080!important;
+            color: black!important;
+        }
+        
+        .hover-yellow:hover {
+            background-color: #fff080 !important;
+            color: black !important;
+        }
+    </style>
+
+</head>
+
+<body style="position:relative;min-height:100%;font-family:sans-serif;">
+
+    <div class="bar card-2 notranslate">
+        <a href="index.html" class="bar-item button hover-none left padding-14" title="Домой" style="width:77px;">
+            <img src="favicon.ico" class="fa" style="position:relative;color:#04AA6D;font-size:42px!important;"></img>
+        </a>
+
+        <a class="bar-item button hide-small barex bar-item-hover padding-24" href="javascript:void(0)" title="Этапы изучения web-разработки" style="width:180px">С чего начать? </a>
+        <a class="bar-item button hide-small barex bar-item-hover padding-24" href="javascript:void(0)" title="Краткое руководство по языкам (HTML/CSS/JS)" style="width:140px">Справочник </a>
+        <a class="bar-item button hide-small barex bar-item-hover padding-24 hide-800" href="javascript:void(0)" title="Информация о важных событиях" style="width:110px">Новости </a>
+        <a class="bar-item button bar-item-hover padding-24" href="javascript:void(0)" id="navbtn_menu" title="Menu" style="width:93px">МЕНЮ</a>
+        <div class="right padding-16">
+            <a class="bar-item button bar-item-hover right hide-small barex light-green" style="width: 125px; border-radius: 25px; margin-right: 8px;" href="" title="Информация о разработчике сайта"><span class="ribbon-topnav hide-1100">КОНТАКТЫ</span></a>
+        </div>
+        <div class="right padding-16">
+            <a class="bar-item button bar-icon-hover right hide-small" style="padding-left:12px;padding-right:12px" href="javascript:void(0)" onclick="changecodetheme(this)" title='Темная тема кода'><i class='fa'>&#xe80b;</i></a>
+        </div>
+    </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main" id="main">
+
+        <div class="row padding-32 black">
+            <div class="content" style="max-width:1250px">
+                <div class="col l6 center" style="padding:3%;">
+                    <h1 style="font-size:100px;font-weight:700;margin-top:-18px!important;">HTML</h1>
+                    <p style="font-size:19px;">Язык для структурирования веб-страницы</p>
+                    <a href="html/default.html" class="button tut-button" style="margin-bottom:2px;">Перейти</a><br>
+                </div>
+                <div class="col l6" style="padding:3%">
+                    <div class="hide-small grey-color card-2 round" style="padding:16px;">
+                        <div class="code htmlHigh notranslate green-border">
+                            &lt;html&gt;
+                            <br> &nbsp;&nbsp;&lt;head&gt;
+                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Уроки HTML&lt;/title&gt;
+                            <br> &nbsp;&nbsp;&lt;/head&gt;
+                            <br> &nbsp;&nbsp;&lt;body&gt;
+                            <br> &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Заголовок 1 уровня&lt;/h1&gt;
+                            <br> &nbsp;&nbsp;&lt;/body&gt;
+                            <br> &lt;/html&gt;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row padding-32 light-green">
+            <div class="content" style="max-width:1250px">
+                <div class="col l6 center" style="padding:3%">
+                    <h1 style="font-size:70px;font-weight:700;margin-bottom:18px!important">JavaScript</h1>
+                    <p style="font-size:19px">Язык для программирования веб-страницы</p>
+                    <a href="js/default.html" class="button block tut-button">Перейти</a><br>
+                </div>
+                <div class="col l6" style="padding:3%">
+                    <div class="hide-small card-2 grey-color round" style="padding:16px;">
+                        <div class="code notranslate green-border">
+                            <div class="htmlHigh">
+                                &lt;input type=&quot;button&quot; id=&quot;hider&quot; value=&quot;Спрятать&quot;&gt;&lt;/input&gt;
+                                <br>&lt;div class=&quot;text&quot;&gt;&lt;/div&gt;
+                                <br>&lt;script&gt;
+                                <br> &nbsp;document.getElementById('hider').onclick = function()&nbsp;{<br> &nbsp;&nbsp;&nbsp;document.getElementById('text').hidden = true;<br>&nbsp;}
+                                <br>&lt;/script&gt;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row padding-32 black">
+            <div class="content" style="max-width:1250px">
+                <div class="col l6 center" style="padding:3%">
+                    <h1 style="font-size:100px;font-weight:700">CSS</h1>
+                    <p style="font-size:19px;">Язык для дизайна веб-страницы</p>
+                    <a href="css/default.html" class="button block tut-button">Перейти</a><br>
+                </div>
+                <div class="col l6" style="padding:3%">
+                    <div class="hide-small grey-color card-2 round" style="padding:16px;">
+                        <div class="code cssHigh notranslate green-border">
+                            body {<br> &nbsp; background-color: black;<br>}<br> h1 {<br> &nbsp; color: white; <br> &nbsp; text-align: center; <br> &nbsp; font-weight: bold; <br> }</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pink tutbuttons">
+            <div style="max-width:1400px;margin:auto">
+                <div class="col l3 m6 s12 center" style="padding:2% 3%;">
+                    <a href="https://jquery-docs.ru" title="Сторонняя документация jQuery">
+                        <div class="card-2 round yellow" style="padding:24px">
+                            <h2 style="font-size:30px;font-weight:500">jQuery</h2>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col l3 m6 s12 center" style="padding:2% 3%;">
+                    <a href="https://ru.reactjs.org/docs/getting-started.html" title="Сторонняя документация React">
+                        <div class="card-2 round yellow" style="padding:24px">
+                            <h2 style="font-size:30px;font-weight:500">React</h2>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col l3 m6 s12 center" style="padding:2% 3%;">
+                    <a href="http://angular-doc.herokuapp.com" title="Сторонная документация AngularJS">
+                        <div class="card-2 round yellow" style="padding:24px 15px">
+                            <h2 style="font-size:30px;font-weight:500">AngularJS</h2>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col l3 m6 s12 center" style="padding:2% 3%;">
+                    <a href="https://nodejsdev.ru/doc/" title="Сторонняя документация NodeJS">
+                        <div class="card-2 round yellow" style="padding:24px">
+                            <h2 style="font-size:30px;font-weight:500">NodeJS</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <style>
+            .hover-yellow:hover {
+                background-color: #fff080!important;
+                color: black!important;
+            }
+        </style>
+        <footer class="container padding-small center black">
+            <p class="medium"><a href="" class="hover-text-green">Сайт разработан в 2022 году для дипломного проекта</a></p>
+        </footer>
+    </div>
+
+    <script>
+        function changecodetheme() {
+            var cc = document.body.className;
+            if (cc.indexOf("darktheme") > -1) {
+                document.body.className = cc.replace("darktheme", "");
+                localStorage.setItem("preferredmode", "light");
+            } else {
+                document.body.className += " darktheme";
+                localStorage.setItem("preferredmode", "dark");
+            }
+        }
+    </script>
+</body>
+
+</html>
